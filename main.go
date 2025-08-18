@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-    // --- Structs with Pointers ---
+
     person1 := utils.NewPerson("Julia", "8100 Main st", "Apt 4B", "Frisco", "Texas", 75034)
     person2 := utils.NewPerson("Brick", "456 Oak Ave", "", "Austin", "Texas", 73301)
 
@@ -26,12 +26,12 @@ func main() {
     fmt.Println("State:", person2.Address.State)
     fmt.Println("Zip:", person2.Address.Zip)
 
-    fmt.Println("\n--- Arrays ---")
+    fmt.Println("\n---- Arrays ----")
     var numbers [5]int = [5]int{10, 20, 30, 40, 50}
     fmt.Println("Array:", numbers)
 
 
-	fmt.Println("\n--- Slices Example ---")
+	fmt.Println("\n---- Slices Example ----")
 	names := []string{"Lilly", "Bobby", "Max"}
 	fmt.Println("Slice:", names)
 
@@ -39,7 +39,6 @@ func main() {
 	names = append(names, "Oxford", "Ginny")
 	fmt.Println("After Append:", names)
 
-	
 	fmt.Println("\nIterating over fruits slice:")
 	for i, name := range names {
 		fmt.Println(i, name)
