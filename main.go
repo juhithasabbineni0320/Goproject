@@ -31,18 +31,18 @@ func main() {
     var numbers [5]int = [5]int{10, 20, 30, 40, 50}
     fmt.Println("Array:", numbers)
 
-    // --- Slices ---
-    fmt.Println("\n--- Slices Example ---")
-    fruits := []string{"Apple", "Banana", "Mango"}
-    fmt.Println("Slice:", fruits)
+   	// --- Slices ---
+	fmt.Println("\n--- Slices Example ---")
+	names := []string{"Lilly", "Bobby", "Max"}
+	fmt.Println("Slice:", names)
 
-    // Append new elements
-    fruits = append(fruits, "Orange", "Grapes")
-    fmt.Println("After Append:", fruits)
+	// Append new elements
+	names = append(names, "Oxford", "Ginny")
+	fmt.Println("After Append:", names)
 
-    // Iterate over slice
-    fmt.Println("\nIterating over fruits slice:")
-    for i, fruit := range fruits {
-        fmt.Println( i, fruit)
-    }
+	// Iterate over slice
+	fmt.Println("\nIterating over fruits slice:")
+	for i, name := range names {
+		fmt.Println(i, name)
+	}
 }
