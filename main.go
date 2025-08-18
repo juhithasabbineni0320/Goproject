@@ -8,7 +8,7 @@ import (
 func main() {
     
     person1 := utils.NewPerson("Julia", "8100 Main st", "Apt 4B", "Frisco", "Texas", 75034)
-    person2 := utils.NewPerson("Brick", "456 Oak Ave", "", "Austin", "Texas", 73301)
+    person2 := utils.NewPerson("Brick", "456 Oak wood", "Apt 1212", "Raleigh", "North Carolina", 27513)
 
     fmt.Println("Name:", person1.Name)
     fmt.Println("Address1:", person1.Address.Address1)
@@ -31,7 +31,7 @@ func main() {
     fmt.Println("Array:", numbers)
 
 
-	fmt.Println("\n--- Slices Example ---")
+	fmt.Println("\n--- Slices ---")
 	names := []string{"Lilly", "Bobby", "Max"}
 	fmt.Println("Slice:", names)
 
