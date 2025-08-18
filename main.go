@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-    // --- Structs with Pointers ---
+    
     person1 := utils.NewPerson("Julia", "8100 Main st", "Apt 4B", "Frisco", "Texas", 75034)
     person2 := utils.NewPerson("Brick", "456 Oak Ave", "", "Austin", "Texas", 73301)
 
