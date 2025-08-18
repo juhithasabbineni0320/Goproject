@@ -11,10 +11,10 @@ type Address struct {
 
 type Person struct {
     Name    string
-    Address *Address // using pointer to Address struct
+    Address *Address
 }
 
-// Function to create a new Person
+
 func NewPerson(name string, addr1, addr2, city, state string, zip int) *Person {
     addr := &Address{
         Address1: addr1,

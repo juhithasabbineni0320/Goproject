@@ -26,21 +26,20 @@ func main() {
     fmt.Println("State:", person2.Address.State)
     fmt.Println("Zip:", person2.Address.Zip)
 
-    // --- Arrays ---
     fmt.Println("\n--- Arrays ---")
     var numbers [5]int = [5]int{10, 20, 30, 40, 50}
     fmt.Println("Array:", numbers)
 
-   	// --- Slices ---
+
 	fmt.Println("\n--- Slices Example ---")
 	names := []string{"Lilly", "Bobby", "Max"}
 	fmt.Println("Slice:", names)
 
-	// Append new elements
+	
 	names = append(names, "Oxford", "Ginny")
 	fmt.Println("After Append:", names)
 
-	// Iterate over slice
+	
 	fmt.Println("\nIterating over fruits slice:")
 	for i, name := range names {
 		fmt.Println(i, name)
