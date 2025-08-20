@@ -20,3 +20,9 @@ I have retrived the person object which is associated with the name "jack", beca
 'jack' is a pointer to "Jack" Person
 
 then i doubleage, here 'doubleAge' is a funtion which take pointer to an int as input, when we call the doubleAge(that is &jack.Age), we are passing the address of jack.Age to the function, which means the doubleage will modify the age field of jack object 
+
+Functions                             |     Methods
+-Not associated with any specific type |- It is associated with a specific
+-defined outside of any type           |- defined wit a receiver
+-we can call it by the name of the     |- called on a variable of the associated type
+function   
