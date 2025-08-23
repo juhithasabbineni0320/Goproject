@@ -15,7 +15,7 @@ type Person struct {
 }
 
 
-func NewPerson(name string, addr1, addr2, city, state string, zip int) *Person {
+func NewPerson(name, addr1, addr2, city, state string, zip int) *Person {
     addr := &Address{
         Address1: addr1,
         Address2: addr2,

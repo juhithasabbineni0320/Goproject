@@ -1,14 +1,14 @@
 # Goproject
 
-Structures 
+# Structures 
 
  At the starting of the program i have created a structure(Person) with two fields name, age 
 
- Method
+# Method
 
 Next i have created a method with person structure to change the persons age (it allows you to modify the person)
 
-Map
+# Map
 
 personMap := make(map[string]*Person)
 
@@ -21,8 +21,40 @@ I have retrived the person object which is associated with the name "jack", beca
 
 then i doubleage, here 'doubleAge' is a funtion which take pointer to an int as input, when we call the doubleAge(that is &jack.Age), we are passing the address of jack.Age to the function, which means the doubleage will modify the age field of jack object 
 
-Functions                             |     Methods
--Not associated with any specific type |- It is associated with a specific
--defined outside of any type           |- defined wit a receiver
--we can call it by the name of the     |- called on a variable of the associated type
+# Functions                                       
+- Not associated with any specific type             
+(it does not belong to type,struct or object)    
+- defined outside of any type                        
+- we can call it by the name of the                 
 function   
+
+# methods
+- It is associated with a specific
+ (like struct)
+- defined wit a receiver 
+- called on a variable of the associated type
+
+# Palindrome
+- The function Palindrome takes a string a as input and It returns a boolean.
+- By using len(a) we are calucating the length of the string 
+- since palindrome is symetric i am comparing the first have and the second half of the word(i starts for 0 and ends ate n/2)
+- a[i] is the first half is the front and a[n-1-i] is from back 
+- if the front and back dosent match we return false ends the loop and return true 
+
+# Fibinooci
+- The function Fibinocci takes an integer x as input & It returns an integer
+- c starts at 0 and b starts at next 1 
+- loop runs x times, updating the c and b for next iteration c is previous b, and b will become sum of previous c+b
+- it will return x if it is not a fibinocci
+
+# Factorial
+- The function Factorial takes an integer n as input & it returns an integer.
+- Factorial of 0 is defined as 1, it stops the loop when n reaches 0 
+- computes factorial of the previous number. multiplies it with n - gives factorial of n, stops when it reaches n==0
+
+# Goroutines
+- *Goroutines are lightweight thread.
+- *it runs concurrently(can run multiple code at same time)
+- The function Greetings takes 2 stings as input
+- printing a formated string %s,%s one is the language and one is message.
+- we are stoping the execution by 1 second usinf time.sleep
