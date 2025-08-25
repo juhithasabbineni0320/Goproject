@@ -74,6 +74,14 @@ func main() {
     time.Sleep(1 * time.Second)
 	fmt.Println("All greetings finished!")
 
+    fmt.Println("---- Print the count of the word -----")
+    text :="The word is go and go is the word"
+    result := class.Countwords(text)
+     
+    for word, c := range result{
+        fmt.Printf("word: %s, count: %d\n", word, c)
+    }
+
 
 	person1 := utils.NewPerson("Julia", "8100 Main st", "Apt 4B", "Frisco", "Texas", 75034)
 	person2 := utils.NewPerson("Brick", "456 Oak wood", "Apt 1212", "Raleigh", "North Carolina", 27513)

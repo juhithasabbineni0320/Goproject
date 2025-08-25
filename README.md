@@ -53,8 +53,20 @@ function
 - computes factorial of the previous number. multiplies it with n - gives factorial of n, stops when it reaches n==0
 
 # Goroutines
-- *Goroutines are lightweight thread.
-- *it runs concurrently(can run multiple code at same time)
+- Goroutines are lightweight thread.
+- it runs concurrently(can run multiple code at same time)
 - The function Greetings takes 2 stings as input
 - printing a formated string %s,%s one is the language and one is message.
 - we are stoping the execution by 1 second usinf time.sleep
+
+# Word count
+- The function countwords takes a string 'l' as input, Returns a map where keys are words & and values are how many times each word appears that is integer.
+- created a map name count to store the words
+- it will loops over every word
+- next if i have any uppercase word i can converting to lowercase
+- when a space is found, If currentword is not empty, it means a full word is ready
+increase the count of that word in the map
+Reset currentword to start fresh for the next word.
+- If the character is not a space, add it to currentword
+- After the loop ends, if there’s still a word left in currentword, add it to the map.This ensures the last word of the string is counted.
+- return final map of the word count

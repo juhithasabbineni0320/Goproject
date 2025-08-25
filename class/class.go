@@ -33,3 +33,25 @@ func Greeting(lang, msg string) {
 		fmt.Printf("[%s]: %s\n", lang, msg)
 		time.Sleep(1 * time.Second)
 }
+func Countwords(l string) map[string]int{
+	count :=make(map[string]int)
+	currentword :=""
+
+	for _, char:=range l{
+      if char>='A'&& char<='Z'{
+		char = char +32
+	  }
+		if char == ' '{
+			if currentword !=""{
+				count[currentword]++
+				currentword =""
+			}
+		}else{
+			currentword += string(char)
+		}
+	}
+	if currentword != "" {
+		count[currentword]++
+	}
+	return count
+}
