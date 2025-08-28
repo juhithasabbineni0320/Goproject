@@ -70,3 +70,21 @@ Reset currentword to start fresh for the next word.
 - If the character is not a space, add it to currentword
 - After the loop ends, if there’s still a word left in currentword, add it to the map.This ensures the last word of the string is counted.
 - return final map of the word count
+
+# Goroutines
+- Goroutines are lightweight threads managed by Go.
+- The syntax for gorouitnes is using go keyword
+- it is cheap
+- it runs concurrently
+
+# Channels
+- Goroutines use channels to communicate 
+- channels contains of 2 types
+  - Buffered channels
+  - unbufferd channels
+- the sender will not send the data untill the receiver is ready to receive
+
+# WaitGroups
+- WaitGroups are for when you need to wait for a bunch of goroutines to finish before moving on
+- we use wait() to block untill everyone is done
+- 
